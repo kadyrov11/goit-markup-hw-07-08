@@ -1,0 +1,113 @@
+.btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.btn-item {
+  margin-right: 8px;
+}
+.portfolio-text {
+  color: #757575;
+}
+.btn {
+  font-family: "Roboto";
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  min-width: 128px;
+  height: 38px;
+  text-align: center;
+  border: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  border: none;
+
+  transition-duration: 250ms;
+
+  background-color: #f5f4fa;
+  color: #212121;
+}
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  background-color: var(--hover-focus-color);
+  outline: none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 30px * 3) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid #eeeeee;
+
+  transition-duration: 250ms;
+}
+.portfolio-item:focus,
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-link-img {
+  transition-property: background-color;
+  transition-duration: 250ms;
+}
+.portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+
+  color: #ffffff;
+
+  opacity: 0;
+}
+.portfolio-link-img:focus .overlay,
+.portfolio-link-img:hover .overlay {
+  opacity: 1;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(0%);
+}
+.portfolio-cap {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+
+  color: #212121;
+}
+.portfolio-description {
+  padding: 20px 24px;
+}
+.portfolio-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}

@@ -1,0 +1,71 @@
+.team-section {
+  background-color: #f5f4fa;
+}
+.team-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+
+  color: #212121;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.team-item {
+  flex-basis: calc((100% - 30px * 4) / 4);
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
+}
+.team-text {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.team-description-container {
+  padding: 30px 20px;
+}
+.team-icon-list {
+  display: inline-flex;
+}
+
+.team-icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-duration: 250ms;
+}
+
+.team-icon-link:focus,
+.team-icon-link:hover {
+  background-color: var(--hover-focus-color);
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.team-icon-link:focus .team-icon,
+.team-icon-link:hover .team-icon {
+  fill: #ffffff;
+}
