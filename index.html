@@ -79,7 +79,7 @@
       </section>
 
       <section class="section">
-        <div class="container features-container">
+        <div class="container">
           <h2 class="visually-hidden">особенности</h2>
           <ul class="list features-list">
             <li class="features-item icon-antenna">
@@ -143,7 +143,11 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-item">
-              <img src="img/img-4.jpg" alt="" width="270" height="260" />
+              <picture class="team-section-pictures">
+                <!-- ================desktop================= -->
+                <source srcset="./img/team-desctop/team-desktop-01.webp 1x" />
+                <img src="img/img-4.jpg" alt="" width="270" height="260" />
+              </picture>
               <div class="team-description-container">
                 <h3 class="team-title">Игорь Демьяненко</h3>
                 <p class="team-text">Product Designer</p>
@@ -357,7 +361,7 @@
           <a href="./index.html" class="link footer-logo">
             <span class="bluelogo">Web</span>Studio
           </a>
-          <address>
+          <address class="footer-adress">
             <p class="our-adress">г. Киев, пр-т Леси Украинки, 26</p>
             <a href="mailto:info@devstudio.com" class="link footer-contact-link"
               >info@example.com</a
@@ -370,7 +374,7 @@
         </div>
         <div class="footer-container">
           <p class="join-text">присоединяйтесь</p>
-          <ul class="list team-icon-list">
+          <ul class="list footer-icon-list">
             <li class="team-icon-item">
               <a href="#" class="footer-icon-link">
                 <svg class="footer-icon">
