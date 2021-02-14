@@ -89,7 +89,13 @@ img {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .button {
@@ -668,23 +674,9 @@ img {
   color: #212121;
 }
 
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
 .team-item {
-  -ms-flex-preferred-size: calc((100% - 30px * 4) / 4);
-      flex-basis: calc((100% - 30px * 4) / 4);
   text-align: center;
   background-color: #ffffff;
-  margin-top: 30px;
-  margin-left: 30px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px -1px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
           box-shadow: 0px 2px 1px -1px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
@@ -700,9 +692,9 @@ img {
 }
 
 .team-icon-list {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .team-icon-item:not(:last-child) {
@@ -735,6 +727,10 @@ img {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+
+.team-img {
+  width: 100%;
 }
 
 .team-icon-link:focus .team-icon,
@@ -851,20 +847,22 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-container {
-    width: 270px;
+    -ms-flex-preferred-size: calc((50%-45px) / 2);
+        flex-basis: calc((50%-45px) / 2);
     margin-bottom: 0;
+    margin-right: 30px;
   }
 }
 
 .subscribe-container {
   margin: 0 auto;
-  width: 480px;
 }
 
 @media screen and (min-width: 1200px) {
   .subscribe-container {
+    -ms-flex-preferred-size: calc(50%-15px);
+        flex-basis: calc(50%-15px);
     margin: 0;
-    width: 100%;
   }
 }
 
@@ -985,6 +983,12 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-input {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-input {
     width: 360px;
@@ -1013,6 +1017,12 @@ img {
   position: relative;
   display: block;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-btn {
+    margin: 0;
+  }
 }
 
 .footer-btn-icon {

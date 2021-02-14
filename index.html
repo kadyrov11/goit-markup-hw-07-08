@@ -145,8 +145,58 @@
             <li class="team-item">
               <picture class="team-section-pictures">
                 <!-- ================desktop================= -->
-                <source srcset="./img/team-desctop/team-desktop-01.webp 1x" />
-                <img src="img/img-4.jpg" alt="" width="270" height="260" />
+                <source
+                  srcset="
+                    ./img/team-desktop/team-desktop-01.jpg    1x,
+                    ./img/team-desktop/team-desktop-01@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./img/team-desktop/team-desktop-01.webp    1x,
+                    ./img/team-desktop/team-desktop-01@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./img/team-tablet/team-tablet-01.jpg    1x,
+                    ./img/team-tablet/team-tablet-01@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./img/team-tablet/team-tablet-01.webp    1x,
+                    ./img/team-tablet/team-tablet-01@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <!-- mobile -->
+                <source
+                  srcset="
+                    ./img/team-mobile/teammob1.jpg    1x,
+                    ./img/team-mobile/teammob1@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team-mobile/teammob1.webp    1x,
+                    ./img/team-mobile/teammob1@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img src="img/img-4.jpg" class="team-img" />
               </picture>
               <div class="team-description-container">
                 <h3 class="team-title">Игорь Демьяненко</h3>
@@ -186,7 +236,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="img/img-5.jpg" alt="" width="270" height="260" />
+              <img src="img/img-5.jpg" alt="" class="team-img" />
               <div class="team-description-container">
                 <h3 class="team-title">Ольга Репина</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -225,7 +275,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="img/img-6.jpg" alt="" width="270" height="260" />
+              <img src="img/img-6.jpg" alt="" class="team-img" />
               <div class="team-description-container">
                 <h3 class="team-title">Николай Тарасов</h3>
                 <p class="team-text">Marketing</p>
@@ -264,7 +314,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="img/img-7.jpg" alt="" width="270" height="260" />
+              <img src="img/img-7.jpg" alt="" class="team-img" />
               <div class="team-description-container">
                 <h3 class="team-title">Михаил Ермаков</h3>
                 <p class="team-text">UI Designer</p>
