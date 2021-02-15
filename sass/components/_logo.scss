@@ -6,9 +6,15 @@
   line-height: 31px;
   letter-spacing: 0.03em;
 
-  margin-right: 93px;
+  margin-right: 88px;
+  padding-left: 15px;
 
   color: #212121;
+
+  @media screen and (minwidth: 1200px) {
+    margin-right: 93px;
+    padding-left: 0;
+  }
 }
 .bluelogo {
   color: #2196f3;

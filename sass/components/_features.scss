@@ -16,6 +16,11 @@
   margin-bottom: 10px;
   color: #212121;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .features-item {
   max-width: 100%;
